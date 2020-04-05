@@ -1,5 +1,7 @@
-export function printHelloWorld(num: number): string {
-  return `Hello world ${num}`;
-}
+export class HelloWorld {
+  public static HELLO_WORLD = 'Hello world!';
 
-printHelloWorld(123);
+  public static printHelloWorld(name: string): string {
+    return `${this.HELLO_WORLD} ${name}`;
+  }
+}
